@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Editor</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div id="showData" style="padding: 10px;">
+        <h5>LocalStorage Editor</h5>
+        <table id="table" class="table table-bordered table-hover table-condensed" style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>KEY</th>
+                    <th>VALUE</th>
+                    <th>#</th>
+            </thead>
+            <tbody id="tbody">
+                <tr data-attr="empty">
+                    <td colspan="3" style="text-align: center;">No Data Found!</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="float: right;">
+            <button id="add" class="btn btn-primary">Add</button>
+            <button id="update" class="btn btn-success">Update</button>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
